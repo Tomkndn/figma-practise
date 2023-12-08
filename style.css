@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+nav{
+    padding: 0.625rem 2.5rem;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+.form-control{
+    background-color: #f7fbff;
+}
+#search-box{
+    background: #F2F2F2;
+    border-radius: 21px;
+    padding-left: 2.5rem;
+    width: 25vw;
+}
+#search-icon{
+    position: relative;
+    left: 1.875rem;
+}
+.account{
+    font-weight: 400;
+}
+#highlight{
+    color: #2F6CE5;
+    font-weight: 900;
+}
+#background{
+    background: url('src/Assets/background.svg');
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30rem;
+}
+.gradient{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px 0px 6.875rem 9.375rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+    height:-webkit-fill-available;
+}
+#details{
+    color: #F2F2F2;
+    font-weight: 900;
+}
+#details>p{
+    font-weight: 100;
+    padding-left: 1.25rem;
+}
+.header{
+    position: sticky;
+    z-index: 1;
+    top: 3.125rem;
+    display: flex;
+    gap: 1.25rem;
+    margin: 2.5rem 6.25rem 0.625rem 6.25rem;
+    line-height: 3.125rem;
+    background-color: #fff;
+    border-bottom: #8A8A8A solid 1px;
+}
+.header-sec,
+.btn-outline-light{
+    display: none;
+}
+.dropdown{
+    margin-left: auto;
+}
+.header>a{
+    text-decoration: none;
+    color: #8A8A8A;
+}
+.header>a:active{
+    color:#000000;
+    border-bottom: #000000 solid 2px;
+}
+.header>a.focus{
+    color:#000000;
+    border-bottom: #000000 solid 2px;
+}
+.btn-primary{
+    height: 2.3125rem;
+}
+.shift{
+    margin-right: 0.3125rem;
+}
+.content{
+    gap: 40px; 
+    margin: 2.5rem 6.25rem 0.625rem 6.25rem;
+}
+.location>p{
+    opacity: 60%;
+}
+b{
+    margin: 0.3125rem 0px;
+    font-size: 1.25rem;
+}
+.card-text{
+    opacity: .7;
+}
+svg{
+    cursor: pointer;
+}
+.hide,
+.float{
+    display: none;
+}
+@media screen and (max-width: 499.97px) {
+    b{font-size: 16px;}
+    .card-text{font-size: 13px;}
+    .gradient{
+        padding: 0px 0px 40px 50px;
+    }
+    nav{
+        padding: 10px 8px;
+    }
+    .account{
+        display: none;
+    }
+    .hide{
+        display: inline;
+    }
+    #details{
+        font-size: 9px;
+    }
+    #background{
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 768.97px) {
+    #search-box{
+        display: none;
+    }
+    #sign-in{
+        display: none;
+    }
+    .modal-body{
+        display: inline;
+    }
+    .float{
+        display: inline;
+    }
+    #background{
+        height: 50vh;
+    }
+    .gradient{
+        padding: 0px 0px 40px 50px;
+    }
+    .header{
+        display: none;
+    }
+    .header-sec{
+        position: sticky;
+        z-index: 1;
+        display: flex;
+        top: 2.8rem;
+        gap: 1.25rem;
+        margin: auto 0px;
+        line-height: 3.125rem;
+        background-color: #fff;
+    }
+    .header-sec>a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .btn-outline-light{
+        display: inline;
+    }
+}
+@media screen and (max-width: 992.97px) { 
+    html{
+        font-size: 11px;
+    } 
+    .header{
+        width: 100%;
+        margin: auto;
+    }
+    .content{
+        margin: 0;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    html{font-size: 12px;}
+    .location{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    #background{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1399.98px) { html{font-size: 15px;} }
